@@ -1,0 +1,156 @@
+/* Automatically generated file. Do not edit (see /usr/share/doc/menu/menu.txt.gz) */
+
+#include "wmmacros"
+
+Debian MENU
+
+
+
+
+
+"Editors" MENU
+  "LeafPad" SHEXEC /usr/bin/leafpad
+"Editors" END
+
+"File Management" MENU
+  "Xarchiver" SHEXEC /usr/bin/xarchiver
+"File Management" END
+
+"Network" MENU
+
+"Communication" MENU
+  "Mutt" SHEXEC x-terminal-emulator  -T "Mutt" -e sh -c "/usr/bin/mutt"
+  "Telnet" SHEXEC x-terminal-emulator  -T "Telnet" -e sh -c "/usr/bin/telnet.netkit"
+"Communication" END
+
+"Monitoring" MENU
+  "WMifs" SHEXEC /usr/bin/wmifs
+"Monitoring" END
+
+"Web Browsing" MENU
+  "w3m" SHEXEC x-terminal-emulator  -T "w3m" -e sh -c "/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html"
+"Web Browsing" END
+"Network" END
+
+"Programming" MENU
+  "Tclsh8.6" SHEXEC x-terminal-emulator  -T "Tclsh8.6" -e sh -c "/usr/bin/tclsh8.6"
+  "TkWish8.6" SHEXEC x-terminal-emulator -e /usr/bin/wish8.6
+"Programming" END
+
+"Science" MENU
+
+"Mathematics" MENU
+  "Bc" SHEXEC x-terminal-emulator  -T "Bc" -e sh -c "/usr/bin/bc"
+  "Dc" SHEXEC x-terminal-emulator  -T "Dc" -e sh -c "/usr/bin/dc"
+"Mathematics" END
+"Science" END
+
+"Shells" MENU
+  "Bash" SHEXEC x-terminal-emulator  -T "Bash" -e sh -c "/bin/bash --login"
+  "Dash" SHEXEC x-terminal-emulator  -T "Dash" -e sh -c "/bin/dash -i"
+  "Sh" SHEXEC x-terminal-emulator  -T "Sh" -e sh -c "/bin/sh --login"
+"Shells" END
+
+"Sound" MENU
+  "Mixer.app" SHEXEC /usr/bin/Mixer.app
+  "pavucontrol" SHEXEC /usr/bin/pavucontrol
+"Sound" END
+
+"System" MENU
+
+"Administration" MENU
+  "Debian Task selector" SHEXEC x-terminal-emulator  -T "Debian Task selector" -e sh -c "su-to-root -c tasksel"
+  "Editres" SHEXEC editres
+  "nitrogen" SHEXEC /usr/bin/nitrogen
+  "Reportbug" SHEXEC x-terminal-emulator  -T "Reportbug" -e sh -c "/usr/bin/reportbug --exit-prompt"
+  "Reportbug (GTK+)" SHEXEC /usr/bin/reportbug --exit-prompt --ui gtk2
+  "Xfontsel" SHEXEC xfontsel
+  "Xkill" SHEXEC xkill
+  "Xrefresh" SHEXEC xrefresh
+"Administration" END
+  "Firewall Configuration" SHEXEC /usr/bin/gufw
+  "gExec" SHEXEC /usr/bin/gexec
+
+"Hardware" MENU
+  "Xvidtune" SHEXEC xvidtune
+"Hardware" END
+
+"Monitoring" MENU
+  "Pstree" SHEXEC x-terminal-emulator  -T "Pstree" -e sh -c "/usr/bin/pstree.x11"
+  "Top" SHEXEC x-terminal-emulator  -T "Top" -e sh -c "/usr/bin/top"
+  "wmcpuload" SHEXEC /usr/bin/wmcpuload
+  "wmmemload" SHEXEC /usr/bin/wmmemload
+  "Xev" SHEXEC x-terminal-emulator -e xev
+"Monitoring" END
+
+"Package Management" MENU
+  "Synaptic Package Manager" SHEXEC x-terminal-emulator -e synaptic-pkexec
+"Package Management" END
+  "Sparky About" SHEXEC /usr/bin/sparky-about
+  "System Upgrade" SHEXEC remsu /usr/bin/sparky-aptus-upgrade
+"System" END
+
+"Terminal Emulators" MENU
+  "LXTerminal" SHEXEC /usr/bin/lxterminal
+  "X-Terminal as root" SHEXEC su-to-root -X -c /usr/bin/x-terminal-emulator
+"Terminal Emulators" END
+
+"Utility" MENU
+  "Gscreenshot" SHEXEC /usr/bin/gscreenshot
+"Utility" END
+
+"Viewers" MENU
+  "docker" SHEXEC /usr/bin/wmdocker
+  "Epdfview" SHEXEC /usr/bin/epdfview
+"Viewers" END
+
+
+"Help" MENU
+  "Info" SHEXEC x-terminal-emulator  -T "Info" -e sh -c "info"
+"Help" END
+  "Run..."  SHEXEC "%A(Run,Type Command:)"
+
+"Screen" MENU
+
+"Locking" MENU
+  "Lock Screen (XScreenSaver)" SHEXEC /usr/bin/xscreensaver-command -lock
+"Locking" END
+
+"Saving" MENU
+  "Activate ScreenSaver (Next)" SHEXEC /usr/bin/xscreensaver-command -next
+  "Activate ScreenSaver (Previous)" SHEXEC /usr/bin/xscreensaver-command -prev
+  "Activate ScreenSaver (Random)" SHEXEC /usr/bin/xscreensaver-command -activate
+  "Demo Screen Hacks" SHEXEC /usr/bin/xscreensaver-command -demo
+  "Disable XScreenSaver" SHEXEC /usr/bin/xscreensaver-command -exit
+  "Enable XScreenSaver" SHEXEC /usr/bin/xscreensaver
+  "Reinitialize XScreenSaver" SHEXEC /usr/bin/xscreensaver-command -restart
+  "ScreenSaver Preferences" SHEXEC /usr/bin/xscreensaver-command -prefs
+"Saving" END
+"Screen" END
+
+"Window Maker" MENU
+  "Info Panel ..."  INFO_PANEL
+  "Legal Panel ..."  LEGAL_PANEL
+  "Preferences"  EXEC WPrefs
+  "Refresh screen"  REFRESH
+  "Restart"  RESTART
+"Window Maker" END
+
+"Window Managers" MENU
+  "Window Maker" RESTART /usr/bin/wmaker
+"Window Managers" END
+
+"WorkSpace" MENU
+  "Appearance"  OPEN_MENU appearance.menu
+  "Arrange Icons"  ARRANGE_ICONS
+  "Clear Session"  CLEAR_SESSION
+  "Hide Others"  HIDE_OTHERS
+  "Save Session"  SAVE_SESSION
+  "Show All"  SHOW_ALL
+  "Workspaces"  WORKSPACE_MENU
+"WorkSpace" END
+  "Exit"  EXIT
+  "Exit session"  SHUTDOWN
+
+
+Debian END
