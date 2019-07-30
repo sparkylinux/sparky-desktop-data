@@ -50,5 +50,25 @@
         "description": "Show window thumbnails on hover",
         "value": true
     },
-    "__md5__": "38b6afe9c09acf6dfa31f0e238bdf09b"
+    "window-preview-show-label": {
+        "type": "switch",
+        "default": true,
+        "description": "Show title above thumbnail",
+        "dependency": "window-preview",
+        "value": true
+    },
+    "window-preview-scale": {
+        "type": "radiogroup",
+        "default": 1,
+        "description": "Thumbnail size",
+        "options": {
+            "Small": 0.75,
+            "Medium": 1,
+            "Large": 1.25,
+            "Largest": 1.5
+        },
+        "dependency": "window-preview",
+        "value": 1
+    },
+    "__md5__": "afda6fe664342bc40bbff3dc8032b47b"
 }

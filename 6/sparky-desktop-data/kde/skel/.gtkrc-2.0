@@ -9,7 +9,7 @@ style "user-font"
 widget_class "*" style "user-font"
 gtk-font-name="DejaVu Sans Condensed 9"
 gtk-theme-name="Sparky6"
-gtk-icon-theme-name="Papirus-Dark"
+gtk-icon-theme-name="Tela"
 gtk-fallback-icon-theme="gnome"
 gtk-cursor-theme-name="breeze_cursors"
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
