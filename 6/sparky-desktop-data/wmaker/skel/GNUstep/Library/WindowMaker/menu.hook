@@ -9,7 +9,7 @@ Debian MENU
 
 
 "Editors" MENU
-  "LeafPad" SHEXEC /usr/bin/leafpad
+  "Mousepad" SHEXEC /usr/bin/mousepad
 "Editors" END
 
 "File Management" MENU

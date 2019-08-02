@@ -1,6 +1,6 @@
 (
   Menu,
-  ("File Manager", EXEC, "pcmanfm"),
+  ("File Manager", EXEC, "sparky-fileopen"),
   ("Web Browser", EXEC, "x-www-browser"),
   ("Run Command", EXEC, "gexec"),
   (Terminal, EXEC, "x-terminal-emulator"),
