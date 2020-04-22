@@ -3,7 +3,7 @@ Upstream Author(s):
     
 Files: *
     Copyright (C) 2016-2020 Paweł Pijanowski
-    License: GPL-2
+    License: GPL-3
 
 File: i3/bspwm .Xresources: rofi colors only
     Copyright (C) Luke Smith https://github.com/LukeSmithxyz/voidrice
@@ -20,9 +20,10 @@ File: i3/.i3blocks.conf
     License: GPL3
 
 File: kupfer/*
+      openbox-noir/*
     Copyright (C) 2018 lami07
     License: GPL3
-
+    
 License:
 
     This package is free software; you can redistribute it and/or modify
