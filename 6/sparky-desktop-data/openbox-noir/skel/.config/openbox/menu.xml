@@ -1,6 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<openbox_menu xmlns="http://openbox.org/"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://openbox.org/">
-    <menu id="root-menu" label="obmenu-generator" execute="/usr/bin/perl /usr/bin/obmenu-generator -i" />
-</openbox_menu>
+<openbox_menu><menu id="desktop-app-menu" label="Applications" execute="/usr/bin/openbox-menu sparky-ob.menu" />
+  <menu id="root-menu" label="Openbox 3">
+    <item label="File Manager" icon='/usr/share/icons/Tela/scalable/apps/system-file-manager.svg'>
+      <action name="Execute"><command>sparky-fileopen</command>
+      </action>
+    </item>
+    <item label="Terminal" icon='/usr/share/icons/Tela/scalable/apps/xfce-terminal.svg'>
+      <action name="Execute"><command>x-terminal-emulator</command>
+      </action>
+    </item>
+    <item label="Web Browser" icon='/usr/share/icons/Tela/scalable/apps/web-browser.svg'>
+      <action name="Execute"><command>x-www-browser</command>
+      </action>
+    </item>
+    <item label="Run command" icon='/usr/share/icons/Tela/scalable/apps/system-run.svg'>
+      <action name="Execute"><command>gexec</command>
+      </action>
+    </item>
+    <separator />
+    <item label="Applications" icon='/usr/share/icons/Tela/scalable/apps/system-run.svg'>
+      <action name="Execute"><command>jgmenu --at-pointer</command>
+      </action>
+    </item>
+    <separator />
+    <!--<menu id="settings" label="Settings">-->
+      <item label="Panel" icon='/usr/share/icons/hicolor/scalable/apps/tint2conf.svg'>
+        <action name="Execute"><command>tint2conf</command>
+        </action>
+      </item>
+      <item label="ObConf" icon='/usr/share/icons/Tela/scalable/apps/preferences-system.svg'>
+        <action name="Execute"><command>obconf</command>
+        </action>
+      </item>
+      <!--<item label="Reconfigure" icon='/usr/share/icons/Tela/scalable/apps/preferences-desktop-applications.svg'>
+        <action name="Reconfigure"/>
+      </item>-->
+      <item label="Restart Openbox" icon='/usr/share/icons/Tela/scalable/apps/system-restart.svg'>
+        <action name="Restart"/>
+      </item>
+    <!--</menu>-->
+    <separator/>
+    <item label="Lock" icon='/usr/share/icons/Tela/scalable/apps/xscreensaver.svg'>
+      <action name="Execute"><command>xscreensaver-command -lock</command>
+      </action>
+    </item>
+    <item label="Exit" icon='/usr/share/icons/Tela/scalable/apps/system-shutdown.svg'>
+      <action name="Execute"><command>wm-logout</command>
+      </action>
+    </item>
+</menu></openbox_menu>

@@ -23,6 +23,13 @@ if [ -f /usr/bin/xdg-user-dirs-update ]; then
 /usr/bin/xdg-user-dirs-update &
 fi
 ### dock
+if [ -f ~/.config/openbox/sparky-plank1 ]; then
+	echo "plank conf already loaded"
+else
+	cd ~/.config/openbox/
+	cat /usr/share/sparky-desktop-data/openbox-noir/plank/docks.ini | dconf load /net/launchpad/plank/docks/
+	touch sparky-plank1
+fi
 sleep 1 && plank &
 ### desktop composing (vsync, transparency, fading and stuff). resource hungry - disable if you don't care for eye candy.
 picom -b &
