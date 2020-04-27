@@ -123,8 +123,8 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>WS 1</name>
-      <name>WS 2</name>
+      <name>Desktop1</name>
+      <name>Desktop 2</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -151,10 +151,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>32</top>
-    <bottom>5</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>30</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>Left</position>
@@ -383,11 +383,11 @@
     </keybind>
     <keybind key="C-Escape">
       <action name="Execute">
-      	<startupnotify>
+        <startupnotify>
           <enabled>true</enabled>
-           <name>jgmenu</name>
-          </startupnotify>
-            <command>jgmenu_run</command>
+          <name>jgmenu</name>
+        </startupnotify>
+        <command>jgmenu_run</command>
       </action>
     </keybind>
   </keyboard>
@@ -725,12 +725,12 @@
       </mousebind>
     </context>
     <context name="Root">
-     <mousebind button="Right" action="Press">
+      <mousebind button="Right" action="Press">
         <action name="Execute">
           <command>jgmenu --at-pointer</command>
         </action>
       </mousebind>
-      </context> 
+    </context>
   </mouse>
   <menu>
     <!-- You can specify more than one menu file in here and they are all loaded,

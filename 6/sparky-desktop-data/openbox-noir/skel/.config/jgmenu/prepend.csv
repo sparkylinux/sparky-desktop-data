@@ -1,5 +1,5 @@
 File,sparky-fileopen,system-file-manager
 Terminal,x-terminal-emulator,utilities-terminal
 Web,x-www-browser,web-browser
-Run Commend,gexec,system-run
+#Run Commend,gexec,system-run
 ^sep()
