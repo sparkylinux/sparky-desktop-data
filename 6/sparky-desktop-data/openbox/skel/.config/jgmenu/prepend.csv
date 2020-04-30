@@ -3,5 +3,5 @@
 File,sparky-fileopen,system-file-manager
 Web,x-www-browser,web-browser
 Terminal,x-terminal-emulator,utilities-terminal
-Run Command,gexec,system-run
+Run,gexec,system-run
 ^sep()

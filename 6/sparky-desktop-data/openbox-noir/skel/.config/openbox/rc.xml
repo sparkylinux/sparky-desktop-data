@@ -123,7 +123,7 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Desktop1</name>
+      <name>Desktop 1</name>
       <name>Desktop 2</name>
     </names>
     <popupTime>875</popupTime>
@@ -329,11 +329,11 @@
         <command>thunar</command>
       </action>
     </keybind>
-    <keybind key="C-m">
+    <!--<keybind key="C-m">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
-    </keybind>
+    </keybind>-->
     <!-- Launch screenshot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
@@ -689,9 +689,9 @@
         <action name="Raise"/>
       </mousebind>
     </context>
-    <context name="Root">
+    <!--<context name="Root">-->
       <!-- Menus -->
-      <mousebind button="Middle" action="Press">
+      <!--<mousebind button="Middle" action="Press">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
         </action>
@@ -701,7 +701,7 @@
           <menu>root-menu</menu>
         </action>
       </mousebind>
-    </context>
+    </context>-->
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
