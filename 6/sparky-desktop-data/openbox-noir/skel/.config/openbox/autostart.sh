@@ -1,5 +1,7 @@
 #! /bin/bash
 
+#annoying beep no more
+xset b off &
 ### polkit agent
 sparky-polkit &
 ### wallpaper tool

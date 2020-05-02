@@ -1,1 +1,4 @@
-export "QT_QPA_PLATFORMTHEME=gtk2"
+### Line below helps to achieve uniform look between GTK and Qt apps. ###
+### Be warned It might mess up interface of your Qt apps. ###
+### Uncomment It at your own risk. Requires qt5-gtk2-platformtheme. ###
+#export "QT_QPA_PLATFORMTHEME=gtk2"
