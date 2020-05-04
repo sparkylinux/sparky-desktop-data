@@ -30,22 +30,30 @@
     <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="thunar"/>
-        <value type="string" value="vlc"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="task manager"/>
         <value type="string" value="uget-gtk"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="task manager"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="yad"/>
         <value type="string" value="blueman-applet"/>
         <value type="string" value="parcellite"/>
-        <value type="string" value="yad"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="parcellite"/>
+      </property>
     </property>
     <property name="plugin-8" type="string" value="datetime"/>
     <property name="plugin-9" type="string" value="showdesktop"/>
     <property name="plugin-10" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="exaile;vlc"/>
     </property>
   </property>
 </channel>
