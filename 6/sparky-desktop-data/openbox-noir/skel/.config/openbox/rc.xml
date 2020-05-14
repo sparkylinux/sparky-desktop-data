@@ -265,7 +265,7 @@
     <!-- Take a screenshot of the current window when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>gscreenshot</command>
+        <command>xfce4-screenshooter</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
@@ -299,7 +299,7 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
+    <!--<keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
@@ -317,6 +317,60 @@
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
+      </action>
+    </keybind>-->
+ <!-- Move and resize -->
+    <keybind key="W-Left">         <!-- MoveResizeTo Left half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <x>0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-Right">        <!--MoveResizeTo Right half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <x>50%</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-Up">        <!--MoveResizeTo Top half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Down">        <!--MoveResizeTo Bottom half of screen -->
+     <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind> 
+ <!-- Move to monitor -->
+    <keybind key="W-S-Right">           <!-- move the window to the second monitor -->
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <monitor>2</monitor>
+      </action>
+    </keybind>
+    <keybind key="W-S-Left">            <!-- move the window to the first monitor -->
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <monitor>1</monitor>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
@@ -337,7 +391,7 @@
     <!-- Launch screenshot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>gscreenshot</command>
+        <command>xfce4-screenshooter</command>
       </action>
     </keybind>
     <!-- Launch monitor settings  -->
@@ -356,10 +410,12 @@
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
-          <enabled>true</enabled>
+          <enabled>false</enabled>
           <name>Terminal emulator</name>
         </startupnotify>
-        <command>/usr/bin/lxterminal</command>
+	<command>/usr/bin/lxterminal</command>
+       <action name="Focus"/>
+       <action name="Raise"/>
       </action>
     </keybind>
     <!-- Launch web browser  -->
@@ -384,10 +440,10 @@
     <keybind key="C-Escape">
       <action name="Execute">
         <startupnotify>
-          <enabled>true</enabled>
+          <enabled>false</enabled>
           <name>jgmenu</name>
         </startupnotify>
-        <command>jgmenu_run</command>
+        <command>jgmenu</command>
       </action>
     </keybind>
   </keyboard>
@@ -725,9 +781,9 @@
       </mousebind>
     </context>
     <context name="Root">
-      <mousebind button="Right" action="Press">
+      <mousebind button="Right" action="Release">
         <action name="Execute">
-          <command>jgmenu --at-pointer</command>
+          <command>jgmenu</command>
         </action>
       </mousebind>
     </context>
