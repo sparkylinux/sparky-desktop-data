@@ -1,9 +1,11 @@
 #! /bin/bash
 
+#annoying beep no more
+xset b off &
 ### polkit agent
 sparky-polkit &
 ### wallpaper tool
-sleep 0.5 && nitrogen --restore &
+sleep 1 && nitrogen --restore &
 ### top bar
 tint2 &
 ### audio tray applet
@@ -22,9 +24,15 @@ fi
 if [ -f /usr/bin/xdg-user-dirs-update ]; then
 /usr/bin/xdg-user-dirs-update &
 fi
-### dock
+### dock first run
+if [ -f ~/.config/openbox/sparky-plank1 ]; then
+echo "plank conf already loaded"
+else
+cat /usr/share/sparky-desktop-data/openbox-noir/plank/docks.ini | dconf load /net/launchpad/plank/docks/
+touch ~/.config/openbox/sparky-plank1
+fi
 sleep 1 && plank &
 ### desktop composing (vsync, transparency, fading and stuff). resource hungry - disable if you don't care for eye candy.
-picom -b &
+systemd-detect-virt -q && picom -bCG || picom -bCG --backend glx --vsync &
 ### welcome message. Remove or comment out when gets boring.
-sleep 5 && notify-send --icon=face-smile-panel --expire-time=8000 'Hi and Welcome' '\nTip: hovering over the elements of the upper bar will display a tooltip with basic information \n\nright click to dismiss' &
+#sleep 5 && notify-send --icon=face-smile-panel --expire-time=8000 'Hi and Welcome' '\nTip: hovering over the elements of the upper bar will display a tooltip with basic information \n\nright click to dismiss' &

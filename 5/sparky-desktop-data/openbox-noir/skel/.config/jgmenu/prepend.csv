@@ -1,0 +1,9 @@
+@rect,,9,8,182,22,10,left,top,#0090ff 0,#000306 88,
+@icon,,12,11,16,16,10,left,top,#0090ff 92,#000306 88,/usr/share/icons/Arc-Darkest-Suru/actions/16/search-icon.svg
+@search,,34,8,120,22,10,left,top,#0090ff 92,#000306 88,Type to search
+^sep()
+File,sparky-fileopen,system-file-manager
+Terminal,x-terminal-emulator,utilities-terminal
+Web,x-www-browser,web-browser
+#Run Commend,gexec,system-run
+^sep()
