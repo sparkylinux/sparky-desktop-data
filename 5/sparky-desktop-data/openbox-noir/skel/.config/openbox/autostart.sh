@@ -26,12 +26,18 @@ if [ -f /usr/bin/xdg-user-dirs-update ]; then
 fi
 ### dock first run
 if [ -f ~/.config/openbox/sparky-plank1 ]; then
-echo "plank conf already loaded"
+	echo "plank conf already set"
+	sleep 1 && plank &
 else
-cat /usr/share/sparky-desktop-data/openbox-noir/plank/docks.ini | dconf load /net/launchpad/plank/docks/
-touch ~/.config/openbox/sparky-plank1
+	CHECKDATA=`apt-cache policy sparky-desktop-data | head -2 | tail -n1 | cut -f4 -d " " | cut -f2 -d "~"`
+	if [ $CHECKDATA \< 20200520 ]; then
+		yad --button=Ok:0 --always-print-result --dialog-sep --image=application-x-deb --title="Warring" --text="Please upgrade your system to get the latest data, then reboot!"
+		exit 1
+	fi
+	cat /usr/share/sparky-desktop-data/openbox-noir/plank/docks.ini | dconf load /net/launchpad/plank/docks/
+	touch ~/.config/openbox/sparky-plank1
+	sleep 1 && plank &
 fi
-sleep 1 && plank &
 ### desktop composing (vsync, transparency, fading and stuff). resource hungry - disable if you don't care for eye candy.
 systemd-detect-virt -q && picom -bCG || picom -bCG --backend glx --vsync &
 ### welcome message. Remove or comment out when gets boring.
