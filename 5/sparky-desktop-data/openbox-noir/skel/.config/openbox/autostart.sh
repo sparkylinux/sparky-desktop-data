@@ -24,6 +24,8 @@ fi
 if [ -f /usr/bin/xdg-user-dirs-update ]; then
 /usr/bin/xdg-user-dirs-update &
 fi
+### desktop composing (vsync, transparency, fading and stuff). resource hungry - disable if you don't care for eye candy.
+systemd-detect-virt -q && picom -bCG || picom -bCG --backend glx --vsync &
 ### dock first run
 if [ -f ~/.config/openbox/sparky-plank1 ]; then
 	echo "plank conf already set"
@@ -31,14 +33,13 @@ if [ -f ~/.config/openbox/sparky-plank1 ]; then
 else
 	CHECKDATA=`apt-cache policy sparky-desktop-data | head -2 | tail -n1 | cut -f4 -d " " | cut -f2 -d "~"`
 	if [ $CHECKDATA \< 20200520 ]; then
-		yad --button=Ok:0 --always-print-result --dialog-sep --image=application-x-deb --title="Warring" --text="Please upgrade your system to get the latest data, then reboot!"
+		sleep 5 && notify-send --icon=state-warning --expire-time=6000 'Openbox-noir components are missing' '\nSystem upgrade will start in a moment \n\nclick to dismiss'
+		sleep 4	&& x-terminal-emulator -e 'remsu sparky-upgrade'
 		exit 1
 	fi
 	cat /usr/share/sparky-desktop-data/openbox-noir/plank/docks.ini | dconf load /net/launchpad/plank/docks/
 	touch ~/.config/openbox/sparky-plank1
 	sleep 1 && plank &
 fi
-### desktop composing (vsync, transparency, fading and stuff). resource hungry - disable if you don't care for eye candy.
-systemd-detect-virt -q && picom -bCG || picom -bCG --backend glx --vsync &
 ### welcome message. Remove or comment out when gets boring.
 #sleep 5 && notify-send --icon=face-smile-panel --expire-time=8000 'Hi and Welcome' '\nTip: hovering over the elements of the upper bar will display a tooltip with basic information \n\nright click to dismiss' &
