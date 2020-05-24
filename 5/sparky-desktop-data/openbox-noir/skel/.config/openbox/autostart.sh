@@ -33,7 +33,7 @@ if [ -f ~/.config/openbox/sparky-plank1 ]; then
 else
 	CHECKDATA=`apt-cache policy sparky-desktop-data | head -2 | tail -n1 | cut -f4 -d " " | cut -f2 -d "~"`
 	if [ $CHECKDATA \< 20200520 ]; then
-		sleep 5 && notify-send --icon=state-warning --expire-time=6000 'Openbox-noir components are missing' '\nSystem upgrade will start in a moment \n\nclick to dismiss'
+		sleep 5 && notify-send --icon=state-warning --expire-time=6000 'Openbox-noir components are missing' '\nSystem upgrade will start in a moment\nPlease reboot afterwards \n\nclick to dismiss'
 		sleep 4	&& x-terminal-emulator -e 'remsu sparky-upgrade'
 		exit 1
 	fi
