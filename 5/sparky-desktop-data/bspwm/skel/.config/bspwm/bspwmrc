@@ -10,7 +10,6 @@ conky --config=/opt/conky/conky-sparky-bspwm.conf &
 xfce4-power-manager &
 xautolock -time 10 -locker 'i3lock-fancy -g -p' &
 xss-lock -- i3lock-fancy -g -p &
-(sleep 5 && kupfer --no-splash) &
 thunar --daemon &
 xdg-user-dirs-update &
 
@@ -28,5 +27,4 @@ bspc config gapless_monocle      true
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

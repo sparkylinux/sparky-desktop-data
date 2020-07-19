@@ -7,8 +7,8 @@ super + Return
 	x-terminal-emulator
 
 # program launcher
-super + space
-	dmenu_run
+super + r
+	rofi -show drun -sidebar-mode
 
 # make sxhkd reload its configuration files:
 super + Escape
