@@ -12,23 +12,6 @@ URxvt*transparent:	true
 URxvt*shading:		40
 URxvt.perl-ext-common:  default
 
-.color-enabled:	true
-!			bg	 fg       bgalt    hlbg     hlfg
-rofi.color-window:	#000000, #002f5f, #002f5f
-rofi.color-normal:	#111   , #819396, #222,    #002f5f, #ffffff
-rofi.color-active:	#002b37, #008ed4, #003643, #002f5f, #66c6ff
-rofi.color-urgent:	#002b37, #da4281, #003643, #002f5f, #890661
-
-!rofi.fake-transparency:	true
-!rofi.fake-background:		background
-rofi.lines:			5
-rofi.bw:			2
-rofi.hide-scrollbar:		true
-rofi.width:			40
-!rofi.columns:			2
-rofi.location:                  0
-rofi.terminal:			urxvt
-
 XTerm.vt100.selectToClipboard:	true
 *foreground: rgb:e2/e2/e2
 *background: rgb:00/0f/1f

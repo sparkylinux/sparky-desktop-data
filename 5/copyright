@@ -5,8 +5,7 @@ Files: *
     Copyright (C) 2016-2020 Paweł Pijanowski
     License: GPL-3
 
-File: i3/bspwm .Xresources: rofi colors only
-    Copyright (C) Luke Smith https://github.com/LukeSmithxyz/voidrice
+File: i3/bspwm .Xresources
     Copyright (C) 2018 lami07
     License: GPL3
 
@@ -16,7 +15,6 @@ File: i3/config: i3 color palette only
     License: ?
 
 File: i3/.i3blocks.conf
-      kupfer/*
       openbox-noir/*
     Copyright (C) 2018-2020 lami07
     License: GPL3
