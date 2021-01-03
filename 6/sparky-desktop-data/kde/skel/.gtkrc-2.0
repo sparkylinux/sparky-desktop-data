@@ -1,17 +1,11 @@
 # File created by KDE Gtk Config
 # Configs for GTK2 programs 
 
-include "/usr/share/themes/Sparky5/gtk-2.0/gtkrc"
-style "user-font" 
-{
-	font_name="DejaVu Sans Condensed"
-}
-widget_class "*" style "user-font"
-gtk-font-name="DejaVu Sans Condensed 9"
+gtk-font-name="Sans Serif, 10"
 gtk-theme-name="Sparky6"
 gtk-icon-theme-name="Tela"
 gtk-fallback-icon-theme="gnome"
 gtk-cursor-theme-name="breeze_cursors"
-gtk-toolbar-style=GTK_TOOLBAR_BOTH
+gtk-toolbar-style=3
 gtk-menu-images=1
 gtk-button-images=1
