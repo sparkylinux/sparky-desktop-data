@@ -4,7 +4,7 @@ if [ -f /usr/bin/sparky-polkit ]; then
 sparky-polkit &
 fi
 if [ -f /usr/bin/nitrogen ]; then
-nitrogen --restore && \
+nitrogen --restore &
 fi
 if [ -f /usr/bin/tint2 ]; then
 tint2 &
