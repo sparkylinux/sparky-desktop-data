@@ -11,7 +11,11 @@ tint2 &
 ### audio tray applet
 sleep 5 && pnmixer &
 ### automatic mounting of external storage devices and other less important stuff.
+if [ -f /usr/bin/pcmanfm ]; then
+pcmanfm -d &
+elif [ -f /usr/bin/thunar ]; then
 thunar --daemon &
+fi
 ### networkmanager tray applet
 if [ -f /opt/sparky/nm-applet-reload ]; then
 /opt/sparky/nm-applet-reload &
@@ -21,8 +25,8 @@ if [ -f /usr/bin/xfce4-power-manager ]; then
 /usr/bin/xfce4-power-manager &
 fi
 ### creates a full suite of localized default user directories within the $HOME directory
-if [ -f /usr/bin/xdg-user-dirs-update ]; then
-/usr/bin/xdg-user-dirs-update &
+if [ -f /usr/bin/xdg-user-dirs-gtk-update ]; then
+/usr/bin/xdg-user-dirs-gtk-update &
 fi
 ### desktop composing (vsync, transparency, fading and stuff). resource hungry - disable if you don't care for eye candy.
 systemd-detect-virt -q && picom -bCG || picom -bCG --backend glx --vsync &

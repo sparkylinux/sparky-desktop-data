@@ -1,7 +1,7 @@
 Sparky Desktop Data
 It provides config files for all supported desktop by Sparky Desktop tool and Sparky Advanced Installer.
 
-Copyright (C) 2016-2019 Paweł Pijanowski
+Copyright (C) 2016-2022 Paweł Pijanowski
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
