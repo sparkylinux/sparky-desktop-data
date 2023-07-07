@@ -1,0 +1,12 @@
+[KFileDialog Settings]
+Recent Files[$e]=sparky.png,/usr/share/pixmaps/sparky.png
+Recent URLs[$e]=/usr/share/pixmaps/
+
+[PlasmaViews][Panel 1][Horizontal1024]
+length=800
+
+[PlasmaViews][Panel 1][Horizontal720]
+thickness=27
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

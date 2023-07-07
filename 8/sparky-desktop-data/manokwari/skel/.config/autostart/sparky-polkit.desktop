@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Sparky Polkit
+Encoding=UTF-8
+Exec=/usr/bin/sparky-polkit
+Name=Sparky Polkit
+StartupNotify=true
+Terminal=false

@@ -1,0 +1,3 @@
+^sep()
+Restart,openbox --restart,openbox
+Exit,wm-logout,system-shutdown

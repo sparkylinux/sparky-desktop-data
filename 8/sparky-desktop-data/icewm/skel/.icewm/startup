@@ -1,0 +1,10 @@
+!/bin/bash
+
+#idesk&
+nm-applet&
+pnmixer&
+nitrogen --restore && \
+/usr/bin/sparky-polkit&
+xfce4-power-manager&
+thunar --daemon&
+xdg-user-dirs-update&

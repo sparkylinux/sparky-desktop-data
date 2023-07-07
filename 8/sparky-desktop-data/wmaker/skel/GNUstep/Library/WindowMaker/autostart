@@ -1,0 +1,10 @@
+#!/bin/sh
+nitrogen --restore && \
+nm-applet &
+/usr/bin/sparky-polkit &
+xscreensaver -nosplash &
+pnmixer &
+xfce4-power-manager &
+thunar --daemon &
+xdg-user-dirs-update &
+xset m 20/10 4
