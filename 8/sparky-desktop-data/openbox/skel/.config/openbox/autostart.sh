@@ -13,6 +13,8 @@ fbpanel &
 fi
 if [ -f /usr/bin/xscreensaver ]; then
 xscreensaver -nosplash &
+elif [ -f /usr/bin/sparky-locker ]; then
+sparky-locker &
 fi
 if [ -f /usr/bin/pnmixer ]; then
 (sleep 5; pnmixer) &
