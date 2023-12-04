@@ -1,4 +1,3 @@
 ^sep()
 Restart_Openbox,openbox --restart,openbox
-Log_Out,openbox --exit,system-log-out
-Power_Off,systemctl poweroff,system-shutdown
+Exit,wm-logout,system-shutdown
