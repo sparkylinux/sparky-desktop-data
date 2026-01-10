@@ -1,0 +1,15 @@
+[begin] (fluxbox)
+[exec] (File Manager) {sparky-fileopen} <>
+[exec] (Web Browser) {x-www-browser} <>
+[exec] (Run Command) {gexec} <>
+[exec] (Terminal) {x-terminal-emulator} <>
+[exec] (System Upgrade) {remsu sparky-aptus-upgrade} <>
+[exec] (Synaptic) {synaptic-pkexec} <>
+[separator]
+[include] (/etc/X11/fluxbox/fluxbox-menu)
+[separator]
+[exec] (Suspend) {systemctl suspend} <>
+[exec] (Hibernate) {systemctl hibernate} <>
+[exec] (System Restart) {systemctl reboot} <>
+[exec] (System PowerOff) {systemctl poweroff} <>
+[end]

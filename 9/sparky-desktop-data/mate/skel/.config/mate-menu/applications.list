@@ -1,0 +1,11 @@
+location:/usr/share/applications/firefox-esr.desktop
+location:/usr/share/applications/io.github.Hexchat.desktop
+location:/usr/share/applications/thunderbird.desktop
+location:/usr/share/applications/pidgin.desktop
+separator
+location:/usr/share/applications/pluma.desktop
+location:/usr/share/applications/mate-terminal.desktop
+location:/usr/share/applications/mate-volume-control.desktop
+separator
+location:/usr/share/applications/mate-display-properties.desktop
+location:/usr/share/applications/mate-system-monitor.desktop

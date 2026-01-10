@@ -1,0 +1,20 @@
+rofi.color-enabled:	true
+
+!			background	border		separator
+rofi.color-window:	#FFFFFFFF,	#FF505050,	#FF505050
+
+!			bg		fg		bgalt		hlbg		hlfg
+rofi.color-normal:	#FFFFFFFF,	#FF505050,	#FFFFFFFF,	#FFAAAAAA,	#FF000000
+rofi.color-active:	#FFFFFFFF,	#FF505050,	#FFFFFFFF,	#FFAAAAAA,	#FF000000
+rofi.color-urgent:	#FFFFFFFF,	#FF505050,	#FFFFFFFF,	#FFAAAAAA,	#FF000000
+
+rofi.lines:			6
+rofi.bw:			1
+rofi.hide-scrollbar:		true
+rofi.width:			40
+rofi.location:                  0
+rofi.terminal:			x-terminal-emulator
+rofi.show-icons:		true
+rofi.fixed-num-lines:		false
+rofi.padding:			10
+rofi.yoffset:			100

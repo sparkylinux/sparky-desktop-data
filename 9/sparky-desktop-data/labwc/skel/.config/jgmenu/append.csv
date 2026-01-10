@@ -1,0 +1,5 @@
+^sep()
+Exit,labwc -e,system-log-out
+Reconfigure,labwc -r,preferences
+Reboot,systemctl reboot,system-restart
+PowerOff,systemctl poweroff,system-shutdown

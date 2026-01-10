@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Sparky PolicyKit
+Comment=Sparky PolicyKit Authentication Agent
+Exec=/usr/bin/sparky-polkit
+Terminal=false
+Type=Application
+Categories=System
+NoDisplay=true

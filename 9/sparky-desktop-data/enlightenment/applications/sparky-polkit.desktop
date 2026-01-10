@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Sparky Polkit
+Exec=/usr/bin/sparky-polkit
+Icon=gtk-dialog-authentication
+NoDisplay=true

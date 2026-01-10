@@ -1,0 +1,11 @@
+# File created by KDE Gtk Config
+# Configs for GTK2 programs 
+
+gtk-font-name="Sans Serif, 10"
+gtk-theme-name="Sparky6"
+gtk-icon-theme-name="Tela"
+gtk-fallback-icon-theme="gnome"
+gtk-cursor-theme-name="breeze_cursors"
+gtk-toolbar-style=3
+gtk-menu-images=1
+gtk-button-images=1

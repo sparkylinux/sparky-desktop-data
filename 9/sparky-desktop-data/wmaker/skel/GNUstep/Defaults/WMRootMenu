@@ -1,0 +1,43 @@
+(
+  Menu,
+  ("File Manager", EXEC, "sparky-fileopen"),
+  ("Web Browser", EXEC, "x-www-browser"),
+  ("Run Command", EXEC, "gexec"),
+  (Terminal, EXEC, "x-terminal-emulator"),
+  (Synaptic, EXEC, "synaptic-pkexec"),
+  ("System Upgrade", EXEC, "remsu sparky-aptus-upgrade"),
+  ("Applications", OPEN_MENU, "~/GNUstep/Library/WindowMaker/menu.hook"),
+  (
+    Utils,
+    ("Audio Control", EXEC, "pavucontrol"),
+    (Firewall, EXEC, gufw),
+    ("Font Chooser", EXEC, xfontsel),
+    ("Keyboard and Mouse", EXEC, lxinput),
+    ("Kill X Application", EXEC, xkill),
+    (Magnify, EXEC, wmagnify),
+    (Monitor, EXEC, lxrandr),
+    (Printer, EXEC, "system-config-printer"),
+    ("Task Manager", EXEC, lxtask),
+    ("Window Properties", SHEXEC, "xprop | xmessage -center -title 'xprop' -file -"),
+    (Wallpaper, EXEC, nitrogen)
+  ),
+  (
+    Commands,
+    ("Hide Others", HIDE_OTHERS),
+    ("Show All", SHOW_ALL),
+    ("Arrange Icons", ARRANGE_ICONS),
+    (Refresh, REFRESH),
+    ("Lock Screen", EXEC, "xscreensaver-command -activate")
+  ),
+  (
+    Session,
+    ("Save Session", SAVE_SESSION),
+    ("Clear Session", CLEAR_SESSION),
+    ("Restart Window Maker", RESTART),
+    ("Exit Window Maker", EXIT),
+    ("System Suspend", EXEC, "systemctl suspend"),
+    ("System Hibernate", EXEC, "systemctl hibernate"),
+    ("System Restart", EXEC, "systemctl reboot"),
+    ("System PowerOff", EXEC, "systemctl poweroff")
+  )
+)

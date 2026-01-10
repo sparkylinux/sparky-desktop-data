@@ -1,0 +1,12 @@
+if [ -f /usr/bin/lxpolkit ]; then
+lxpolkit &
+fi
+if [ -f /usr/bin/waybar ]; then
+waybar --log-level off &
+fi
+if [ -f /usr/bin/swaybg ]; then
+swaybg -i /opt/artwork/sparky-desktop.png &
+fi
+if [ -f /usr/bin/mako ]; then
+mako >/dev/null 2>&1 &
+fi

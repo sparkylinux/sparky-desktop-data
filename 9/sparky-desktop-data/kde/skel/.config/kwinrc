@@ -1,0 +1,14 @@
+[Compositing]
+Backend=XRender
+OpenGLIsUnsafe=false
+
+[Desktops]
+Number=1
+
+[Effect-Zoom]
+InitialZoom=1
+
+[TabBox]
+DesktopLayout=org.sparky.desktop
+DesktopListLayout=org.sparky.desktop
+LayoutName=org.sparky.desktop
