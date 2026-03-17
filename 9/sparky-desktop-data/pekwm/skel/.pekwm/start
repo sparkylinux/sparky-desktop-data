@@ -18,7 +18,8 @@
 # wasn't one, and I wanted to avoid that for pekwm. ;) --eyez
 fbpanel &
 nm-applet &
-nitrogen --restore && \
+#nitrogen --restore && \
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
 /usr/bin/sparky-polkit &
 (sleep 3s && pnmixer) &
 xscreensaver -nosplash &

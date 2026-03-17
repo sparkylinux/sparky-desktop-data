@@ -4,7 +4,8 @@ sxhkd &
 /usr/bin/sparky-polkit &
 tint2 &
 nm-applet &
-nitrogen --restore &
+#nitrogen --restore &
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
 (sleep 5s && pnmixer) &
 conky --config=/opt/conky/conky-sparky-bspwm.conf &
 xfce4-power-manager &

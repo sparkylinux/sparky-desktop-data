@@ -3,7 +3,8 @@
 #idesk&
 nm-applet&
 pnmixer&
-nitrogen --restore && \
+#nitrogen --restore && \
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
 /usr/bin/sparky-polkit&
 xfce4-power-manager&
 thunar --daemon&

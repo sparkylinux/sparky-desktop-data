@@ -3,13 +3,23 @@
 #annoying beep no more
 xset b off &
 ### polkit agent
+if [ -f /usr/bin/sparky-polkit ]; then
 sparky-polkit &
+fi
 ### wallpaper tool
+if [ -f /usr/bin/feh ]; then
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
+elif [ -f /usr/bin/nitrogen ]; then
 nitrogen --restore &
+fi
 ### top bar
+if [ -f /usr/bin/tint2 ]; then
 tint2 &
+fi
 ### audio tray applet
-sleep 5 && pnmixer &
+if [ -f /usr/bin/pnmixer ]; then
+(sleep 5; pnmixer) &
+fi
 ### automatic mounting of external storage devices and other less important stuff.
 if [ -f /usr/bin/pcmanfm ]; then
 pcmanfm -d &

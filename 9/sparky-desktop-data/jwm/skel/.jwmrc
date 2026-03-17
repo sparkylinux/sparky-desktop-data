@@ -220,7 +220,7 @@
     <!-- Startup section -->
     <StartupCommand>nm-applet</StartupCommand>
     <StartupCommand>pnmixer</StartupCommand>
-    <StartupCommand>nitrogen --restore</StartupCommand>
+    <StartupCommand>feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg</StartupCommand>
     <StartupCommand>/usr/bin/sparky-polkit</StartupCommand>
     <StartupCommand>xscreensaver -nosplash</StartupCommand>
     <StartupCommand>xfce4-power-manager</StartupCommand>

@@ -466,7 +466,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 awful.util.spawn_with_shell("nm-applet")
-awful.util.spawn_with_shell("nitrogen --restore")
+awful.util.spawn_with_shell("feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg")
 awful.util.spawn_with_shell("pnmixer")
 awful.util.spawn_with_shell("/usr/bin/sparky-polkit")
 awful.util.spawn_with_shell("xfce4-power-manager")

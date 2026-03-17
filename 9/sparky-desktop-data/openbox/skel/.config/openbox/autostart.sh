@@ -3,7 +3,9 @@
 if [ -f /usr/bin/sparky-polkit ]; then
 sparky-polkit &
 fi
-if [ -f /usr/bin/nitrogen ]; then
+if [ -f /usr/bin/feh ]; then
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
+elif [ -f /usr/bin/nitrogen ]; then
 nitrogen --restore &
 fi
 if [ -f /usr/bin/tint2 ]; then

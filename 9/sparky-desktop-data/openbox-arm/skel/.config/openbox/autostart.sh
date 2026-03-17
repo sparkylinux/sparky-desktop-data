@@ -3,7 +3,9 @@
 if [ -f /usr/bin/sparky-polkit ]; then
 sparky-polkit &
 fi
-if [ -f /usr/bin/nitrogen ]; then
+if [ -f /usr/bin/feh ]; then
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
+elif [ -f /usr/bin/nitrogen ]; then
 nitrogen --restore &
 fi
 if [ -f /usr/bin/tint2 ]; then
@@ -26,4 +28,6 @@ if [ -f /usr/bin/xdg-user-dirs-update ]; then
 fi
 if [ -f /usr/bin/pcmanfm ]; then
 pcmanfm -d &
+elif [ -f /usr/bin/thunar ]; then
+thunar --daemon &
 fi

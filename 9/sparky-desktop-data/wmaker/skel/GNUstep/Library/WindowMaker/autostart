@@ -1,5 +1,6 @@
 #!/bin/sh
-nitrogen --restore && \
+#nitrogen --restore && \
+feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
 nm-applet &
 /usr/bin/sparky-polkit &
 xscreensaver -nosplash &
