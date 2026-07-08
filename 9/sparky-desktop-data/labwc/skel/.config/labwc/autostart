@@ -1,3 +1,4 @@
+# labwc autostart by pavroo 2026.07.08
 if [ -f /usr/bin/lxpolkit ]; then
 lxpolkit &
 fi
@@ -10,3 +11,4 @@ fi
 if [ -f /usr/bin/mako ]; then
 mako >/dev/null 2>&1 &
 fi
+xhost +si:localuser:root &

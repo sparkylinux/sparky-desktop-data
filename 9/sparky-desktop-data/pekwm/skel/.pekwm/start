@@ -19,7 +19,7 @@
 fbpanel &
 nm-applet &
 #nitrogen --restore && \
-feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
+sparky-feh-restore &
 /usr/bin/sparky-polkit &
 (sleep 3s && pnmixer) &
 xscreensaver -nosplash &

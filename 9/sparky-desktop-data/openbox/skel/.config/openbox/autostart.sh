@@ -3,8 +3,8 @@
 if [ -f /usr/bin/sparky-polkit ]; then
 sparky-polkit &
 fi
-if [ -f /usr/bin/feh ]; then
-feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
+if [ -f /usr/bin/sparky-feh-restore ]; then
+sparky-feh-restore &
 elif [ -f /usr/bin/nitrogen ]; then
 nitrogen --restore &
 fi

@@ -7,8 +7,8 @@ if [ -f /usr/bin/sparky-polkit ]; then
 sparky-polkit &
 fi
 ### wallpaper tool
-if [ -f /usr/bin/feh ]; then
-feh --no-fehbg --bg-scale /opt/artwork/sparky-base.jpg &
+if [ -f /usr/bin/sparky-feh-restore ]; then
+sparky-feh-resore &
 elif [ -f /usr/bin/nitrogen ]; then
 nitrogen --restore &
 fi

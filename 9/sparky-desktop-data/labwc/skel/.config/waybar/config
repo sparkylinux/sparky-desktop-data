@@ -36,7 +36,7 @@
     },
     "custom/sparky_button": {
         "format": "",
-        "on-click": "jgmenu_run",
+        "on-click": "wofi --show drun",
         "tooltip": false
     },
     "cpu": {
