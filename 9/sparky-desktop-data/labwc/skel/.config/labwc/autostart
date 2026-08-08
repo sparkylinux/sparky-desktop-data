@@ -11,4 +11,6 @@ fi
 if [ -f /usr/bin/mako ]; then
 mako >/dev/null 2>&1 &
 fi
-xhost +si:localuser:root &
+if [ -f /usr/bin/sparky-labwc-start ]; then
+/usr/bin/sparky-labwc-start &
+fi
